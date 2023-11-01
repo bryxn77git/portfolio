@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --text: #363636;
+        --background: #ffffff;   
+        --primary: #3c6f72;   
+        --secondary: #9d858d;    
+        --accent: #284b62; 
+    }
+    .dark {
+        --text: #c9c9c9;
+        --background: #121212;
+        --primary: #8dc0c3;
+        --secondary: #b5928c;
+        --accent: #9dc0d7;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
