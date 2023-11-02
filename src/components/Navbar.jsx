@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useState  } from "react"
 import { useTranslation } from "react-i18next";
 import { Bars3Icon, MoonIcon } from '@heroicons/react/24/solid'
 import { LangDropbox } from "./LangDropbox";
+
 
 
 export const Navbar = () => {
@@ -9,9 +10,6 @@ export const Navbar = () => {
     const [darkMode, setDarkMode] = useState(false);
     
     const [t, i18n] = useTranslation("global");
-
-   
-    
 
   return (  
     <section className={`${ darkMode && 'dark'} flex justify-between items-center px-5 py-3  bg-background shadow-md`}>
@@ -33,8 +31,6 @@ export const Navbar = () => {
           </button>
 
           <LangDropbox />
-
-         
 
         </div>
        <div>

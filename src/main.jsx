@@ -8,6 +8,7 @@ import global_en from './lang/en/global.json'
 
 import { Home } from './Home'
 import './index.css'
+import { UiProvider } from './context/ui/UiProvider';
 
 i18next.init({
   lng: "es",
@@ -25,7 +26,9 @@ i18next.init({
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
-      <Home />
+      <UiProvider>
+        <Home />
+      </UiProvider>
     </I18nextProvider>
   </React.StrictMode>,
 )

@@ -1,35 +1,25 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
+import { UiContext } from "../context/ui/UiContext";
 
 export const LangDropbox = () => {
 
-  const [langEs, setLangEs] = useState(false);
-  const handleChangeLang = (lang) => {
-        if(lang === 'es'){
-          setLangEs(true);
-        }else{
-          setLangEs(false)
-
-        }
-    }
-
+  const { lang, toggleChangeLang } = useContext(UiContext);
 
   return (
-    <div class="dropdown">
+    <div className="dropdown">
     <div>
-      <button type="button" class="transition-all duration-150 h-[32px] flex justify-center items-center gap-x-1.5 rounded-md bg-white px-2 text-md font-semibold ring-1 ring-accent hover:ring-secondary hover:text-secondary" >
-        {
-          langEs ? 'ES' : 'EN'
-        }
-        <ChevronDownIcon class="h-4 w-4"/>
+      <button type="button" className="my-1 transition-all duration-150 h-[32px] flex justify-center items-center gap-x-1.5 rounded-md bg-white px-2 text-md font-semibold ring-1 ring-accent hover:ring-secondary hover:text-secondary" >
+          { lang.toUpperCase() }
+        <ChevronDownIcon className="h-4 w-4"/>
       </button>
     </div>
 
-    <div class="dropdown-menu hidden opacity-100 absolute z-10 rounded-md bg-background shadow-lg ring-1 ring-accent ring-opacity-5">
-      <div class="py-1">
-        <button class="transition-all duration-150 hover:text-secondary block px-4 py-1 text-md font-semibold" onClick={ () => handleChangeLang('en') }>EN</button>
+    <div className="dropdown-menu hidden opacity-100 absolute z-10 rounded-md bg-background shadow-lg ring-1 ring-accent ring-opacity-5">
+      <div className="py-1">
+        <button className="transition-all duration-150 hover:text-secondary block px-4 py-1 text-md font-semibold" onClick={ () => toggleChangeLang('en') }>EN</button>
         <hr className="opacity-10"></hr>
-        <button class="transition-all duration-150 hover:text-secondary block px-4 py-1 text-md font-semibold" onClick={ () => handleChangeLang('es') }>ES</button>
+        <button className="transition-all duration-150 hover:text-secondary block px-4 py-1 text-md font-semibold" onClick={ () => toggleChangeLang('es') }>ES</button>
       </div>
     </div>
   </div>
