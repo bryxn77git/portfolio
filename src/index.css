@@ -22,3 +22,11 @@
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.logos .social-svg-mask {
+    fill: var(--accent) !important;
+}
+
+.logos:hover .social-svg-mask {
+    fill: var(--secondary) !important;
+}

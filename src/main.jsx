@@ -8,7 +8,7 @@ import global_en from './lang/en/global.json'
 
 import { Home } from './Home'
 import './index.css'
-import { UiProvider } from './context/ui/UiProvider';
+import { UiProvider } from './context/uiContext/UiProvider';
 
 i18next.init({
   lng: "es",

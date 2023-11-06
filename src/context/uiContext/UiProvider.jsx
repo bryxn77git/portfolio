@@ -1,5 +1,5 @@
 import { useReducer } from 'react';
-import { UiContext, uiReducer } from './';
+import { UiContext, uiReducer } from '.';
 import { useTranslation } from 'react-i18next';
 
 const UI_INITIAL_STATE = {

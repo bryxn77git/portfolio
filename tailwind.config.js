@@ -13,7 +13,11 @@ export default {
       'secondary': 'var(--secondary)',
       'accent': 'var(--accent)',
      },
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'poppins'],
+      },
+    },
   },
   plugins: [],
 }
