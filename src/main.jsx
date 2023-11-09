@@ -9,6 +9,7 @@ import global_en from './lang/en/global.json'
 import { Home } from './Home'
 import './index.css'
 import { UiProvider } from './context/uiContext/UiProvider';
+import { BrowserRouter } from 'react-router-dom';
 
 i18next.init({
   lng: "es",
@@ -24,11 +25,11 @@ i18next.init({
 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <BrowserRouter>
     <I18nextProvider i18n={i18next}>
       <UiProvider>
         <Home />
       </UiProvider>
     </I18nextProvider>
-  </React.StrictMode>,
+  </BrowserRouter>,
 )

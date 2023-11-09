@@ -10,7 +10,7 @@ export const DrawerMenu = ( props ) => {
     
   return (
     <>
-        <div  className={`top-0 left-0 min-w-[200px] bg-background py-5 px-5  text-text fixed h-full z-40 ease-in-out duration-300 ${
+        <div  className={`top-0 left-0 min-w-[250px] bg-background py-3 px-5  text-text fixed h-full z-40 ease-in-out duration-300 ${
             showSidebar ? "translate-x-0" : "-translate-x-full"
         }`}>          
 
@@ -19,23 +19,21 @@ export const DrawerMenu = ( props ) => {
                     <XMarkIcon className="h-10 text-accent"/>
                 </button>
                 <hr className="opacity-10"/>
-                <li className="pl-5 underline decoration-secondary decoration-4">{t("navBar.home")}</li>
+                <li className="pl-5 underline decoration-secondary decoration-4 cursor-pointer">{t("navBar.home")}</li>
                 <hr className="opacity-10"/>
-                <li className="pl-5">{t("navBar.about")}</li>
+                <li className="pl-5 cursor-pointer">{t("navBar.about")}</li>
                 <hr className="opacity-10"/>
-                <li className="pl-5">{t("navBar.projects")}</li>
+                <li className="pl-5 cursor-pointer">{t("navBar.projects")}</li>
                 <hr className="opacity-10"/>
-                <li className="pl-5">{t("navBar.contact")}</li> 
+                <li className="pl-5 cursor-pointer">{t("navBar.contact")}</li> 
                 <hr className="opacity-10"/>
             </ul>
 
         </div>
-        <div className={`bg-text w-full h-[1200px] absolute opacity-10 ${
-            showSidebar ? "absolute" : "hidden"
-        }`}
+
+        <div className={`bg-text w-screen h-screen z-20 left-0 right-0 top-0 bottom-0 opacity-5 ${showSidebar ? "absolute" : "hidden"}`}
             onClick={() => setShowSidebar(false)}
         >
-
         </div>
     </>
   )

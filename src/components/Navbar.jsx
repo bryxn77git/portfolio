@@ -18,10 +18,18 @@ export const Navbar = () => {
         
        <nav className="hidden md:block w-full">
             <ul className="flex gap-6 font-poppins font-semibold text-text">
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer underline decoration-secondary decoration-4">{t("navBar.home")}</li>
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">{t("navBar.about")}</li>
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">{t("navBar.projects")}</li>
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">{t("navBar.contact")}</li>  
+              <li className="hover:text-secondary transition-all duration-150 cursor-pointer underline decoration-secondary decoration-4">
+                <a href="#home">{t("navBar.home")}</a>
+              </li>
+              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">
+                <a href="#about">{t("navBar.about")}</a>
+              </li>
+              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">
+                <a href="#projects">{t("navBar.projects")}</a>
+              </li>
+              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">
+                <a href="#contact">{t("navBar.contact")}</a>
+              </li>  
             </ul>
        </nav>
 
@@ -46,7 +54,7 @@ export const Navbar = () => {
 
        {/* <div className={drawerMenu ? 'block' : 'hidden'}> */}
         <DrawerMenu showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
-       {/* </div> */}
+       {/* </div> */}       
 
     </section>
   )

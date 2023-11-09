@@ -3,7 +3,8 @@ import { UiContext, uiReducer } from '.';
 import { useTranslation } from 'react-i18next';
 
 const UI_INITIAL_STATE = {
-    lang: 'es'
+    lang: 'es',
+    
 }
 
 export const UiProvider = ({ children }) => {
