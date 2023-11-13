@@ -32,3 +32,7 @@
 .logos:hover .social-svg-mask {
     fill: var(--secondary) !important;
 }
+
+.dark .logos .social-svg-icon {
+    fill: var(--background) !important;
+}
