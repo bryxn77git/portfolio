@@ -9,6 +9,11 @@ export const uiReducer = ( state, action ) => {
             ...state,
             lang: action.payload,
         }
+      case '[UI] - ToggleChangeTheme':
+         return {
+            ...state,
+            theme: action.payload,
+        }
 
        default:
           return state;

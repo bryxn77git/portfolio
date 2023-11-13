@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const UI_INITIAL_STATE = {
     lang: 'es',
+    theme: 'light',
     
 }
 
@@ -18,10 +19,15 @@ export const UiProvider = ({ children }) => {
         i18n.changeLanguage(lang)
     }    
 
+    const toggleChangeTheme = ( theme ) => {
+        dispatch({ type: '[UI] - ToggleChangeTheme', payload: theme });
+    }  
+
     return (
         <UiContext.Provider value={{
             ...state,
             toggleChangeLang,
+            toggleChangeTheme
         }}>
             { children }
         </UiContext.Provider>

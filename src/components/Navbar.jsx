@@ -1,20 +1,21 @@
-import { useState  } from "react"
+import { useContext, useState  } from "react"
 import { useTranslation } from "react-i18next";
-import { Bars3Icon, MoonIcon } from '@heroicons/react/24/solid'
+import { Bars3Icon, MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import { LangDropbox } from "./LangDropbox";
 import { SocialIcons } from "./SocialIcons";
 import { DrawerMenu } from "./DrawerMenu";
+import { UiContext } from "../context/uiContext";
 
 
 export const Navbar = () => {
 
-    const [darkMode, setDarkMode] = useState(false);
-    const [showSidebar, setShowSidebar] = useState(false)
+    const [showSidebar, setShowSidebar] = useState(false);
+    const { theme, toggleChangeTheme } = useContext(UiContext);
     
     const [t, i18n] = useTranslation("global");
 
   return (  
-    <section className={`${ darkMode && 'dark'} flex justify-between items-center px-5 py-3  bg-background shadow-md`}>
+    <section className={`flex justify-between items-center px-5 py-3  bg-background shadow-md`}>
         
        <nav className="hidden md:block w-full">
             <ul className="flex gap-6 font-poppins font-semibold text-text">
@@ -42,7 +43,13 @@ export const Navbar = () => {
           <SocialIcons onNavBar={true} />
 
           <button>
-            <MoonIcon className="h-8 hover:text-secondary transition-all duration-150"/>
+            {
+              theme === 'light' ? (
+                  <MoonIcon className="h-8 hover:text-secondary transition-all duration-150" onClick={() => toggleChangeTheme('dark')}/>
+                ) : (
+                  <SunIcon className="h-8 hover:text-secondary transition-all duration-150" onClick={() => toggleChangeTheme('light')}/>
+              )
+            }
           </button>
 
           <LangDropbox />
