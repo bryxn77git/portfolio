@@ -9,6 +9,7 @@ export default {
     colors: {
       'text': 'var(--text)',
       'background': 'var(--background)',
+      'background-complement': 'var(--background-complement)',
       'primary': 'var(--primary)',
       'secondary': 'var(--secondary)',
       'accent': 'var(--accent)',

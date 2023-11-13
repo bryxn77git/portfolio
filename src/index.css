@@ -5,7 +5,8 @@
 @layer base {
     :root {
         --text: #363636;
-        --background: #ffffff;   
+        --background: #ffffff; 
+        --background-complement: #f7f7f7; 
         --primary: #3c6f72;   
         --secondary: #9d858d;    
         --accent: #284b62; 
@@ -13,6 +14,7 @@
     .dark {
         --text: #c9c9c9;
         --background: #121212;
+        --background-complement: #1A1A1A; 
         --primary: #8dc0c3;
         --secondary: #b5928c;
         --accent: #9dc0d7;

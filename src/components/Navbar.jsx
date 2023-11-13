@@ -39,7 +39,7 @@ export const Navbar = () => {
 
        <div className="flex w-full justify-end items-center gap-3 text-accent">
 
-          <SocialIcons />
+          <SocialIcons onNavBar={true} />
 
           <button>
             <MoonIcon className="h-8 hover:text-secondary transition-all duration-150"/>
