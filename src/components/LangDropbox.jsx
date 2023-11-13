@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import { UiContext } from "../context/uiContext/UiContext";
 
@@ -6,6 +6,9 @@ export const LangDropbox = () => {
 
   const { lang, toggleChangeLang } = useContext(UiContext);
 
+  useEffect(() => {
+    toggleChangeLang(localStorage.getItem('lang') || 'es')
+  }, [])
 
   return (
     <div className="dropdown font-poppins font-semibold text-md">

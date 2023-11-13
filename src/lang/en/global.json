@@ -4,5 +4,12 @@
         "about": "About",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "home": {
+        "hi": "Hey! I am",
+        "name": "Bryan Balderrama",
+        "career": "Software engineer",
+        "projectsButton": "PROJECTS",
+        "cvButton": "RESUME"
     }
 }

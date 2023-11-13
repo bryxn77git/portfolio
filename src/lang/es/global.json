@@ -4,6 +4,12 @@
         "about": "Acerca de",
         "projects": "Proyectos",
         "contact": "Contacto"
-        
+    },
+    "home": {
+        "hi": "¡Hola! soy",
+        "name": "Bryan Balderrama",
+        "career": "Ingeniero de software",
+        "projectsButton": "PROYECTOS",
+        "cvButton": "CURRÍCULUM"
     }
 }

@@ -11,7 +11,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 
 i18next.init({
-  lng: "es",
+  lng: localStorage.getItem('lang') || "es",
   interpolation: {escapeValue: false},
   resources: {
     es: {

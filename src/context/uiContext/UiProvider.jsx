@@ -17,10 +17,12 @@ export const UiProvider = ({ children }) => {
     const toggleChangeLang = ( lang ) => {
         dispatch({ type: '[UI] - ToggleChangeLang', payload: lang });
         i18n.changeLanguage(lang)
+        localStorage.setItem('lang', lang);
     }    
 
     const toggleChangeTheme = ( theme ) => {
         dispatch({ type: '[UI] - ToggleChangeTheme', payload: theme });
+        localStorage.setItem('theme', theme);
     }  
 
     return (
