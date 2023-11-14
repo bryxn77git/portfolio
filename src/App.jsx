@@ -21,8 +21,10 @@ export const App = () => {
         <Home />
         
         <About />
-        {/* <div id="projects">Projects</div>
-        <div id="contact">Contact</div> */}
+
+        
+        <div id="projects">Projects</div>
+        <div id="contact">Contact</div>
     </div>
   )
 }

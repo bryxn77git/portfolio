@@ -7,7 +7,7 @@ export const Home = () => {
   const { t, i18n } = useTranslation('global');
 
   return (
-    <section className="flex items-center flex-col py-10 md:py-16  text-text font-poppins">
+    <section  id="home" className="flex items-center flex-col py-10 md:py-16  text-text font-poppins">
         
         <div className="text-center flex flex-col gap-2 mb-48">
             <p className="text-xl md:text-2xl font-medium">{t("home.hi")}</p>

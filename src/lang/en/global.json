@@ -11,5 +11,12 @@
         "career": "Software engineer",
         "projectsButton": "PROJECTS",
         "cvButton": "RESUME"
+    },
+    "about": {
+        "title": "About me",
+        "text": "I am a software engineer focused on JavaScript technologies. My experience focuses on frontend development using the React js library and the Next js framework. I am committed to my professional growth and stay up to date with the latest technologies and tools. My goal is to become a fullstack developer, so I am expanding my knowledge. Through my constant training, I seek to improve my technical skills.",
+        "subtitle1": "Technical skills",
+        "subtitle2": "In progress"
     }
+
 }

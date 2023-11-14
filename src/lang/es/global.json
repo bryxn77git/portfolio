@@ -11,5 +11,11 @@
         "career": "Ingeniero de software",
         "projectsButton": "PROYECTOS",
         "cvButton": "CURRÍCULUM"
+    },
+    "about": {
+        "title": "Acerca de mi",
+        "text": "Soy un ingeniero de software enfocado en las tecnologías de JavaScript. Mi experiencia se centra en el desarrollo frontend utilizando la libreria de React js y el framework Next js. Estoy comprometido con mi crecimiento profesional y me mantengo actualizado con las últimas tecnologias y herramientas. Mi objetivo es convertirme en un desarrollador fullstack, por lo que estoy ampliando mis conocimientos. A través de mi constante capacitación, busco mejorar mis habilidades técnicas.",
+        "subtitle1": "Habilidades tecnicas",
+        "subtitle2": "En progreso"
     }
 }
