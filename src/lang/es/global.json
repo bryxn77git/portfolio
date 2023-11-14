@@ -16,6 +16,13 @@
         "title": "Acerca de mi",
         "text": "Soy un ingeniero de software enfocado en las tecnologías de JavaScript. Mi experiencia se centra en el desarrollo frontend utilizando la libreria de React js y el framework Next js. Estoy comprometido con mi crecimiento profesional y me mantengo actualizado con las últimas tecnologias y herramientas. Mi objetivo es convertirme en un desarrollador fullstack, por lo que estoy ampliando mis conocimientos. A través de mi constante capacitación, busco mejorar mis habilidades técnicas.",
         "subtitle1": "Habilidades tecnicas",
-        "subtitle2": "En progreso"
+        "subtitle2": "En progreso",
+        "subtitle3": "Cursos y certificaciones",
+        "titleCertificate1": "Full Stack Engineer Bootcamp 2023",
+        "dateCertificate1": "Mayo 2023",
+        "titleCertificate2": "Next.js: El framework de React para producción",
+        "dateCertificate2": "Enero 2023",
+        "titleCertificate3": "React: De cero a experto ( Hooks y MERN )",
+        "dateCertificate3": "Mayo 2021"
     }
 }
