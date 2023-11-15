@@ -17,6 +17,19 @@
         "text": "I am a software engineer focused on JavaScript technologies. My experience focuses on frontend development using the React js library and the Next js framework. I am committed to my professional growth and stay up to date with the latest technologies and tools. My goal is to become a fullstack developer, so I am expanding my knowledge. Through my constant training, I seek to improve my technical skills.",
         "subtitle1": "Technical skills",
         "subtitle2": "In progress"
+    },
+    "projects": {
+        "title": "Projects",
+        "project1Name": "Segycom web 4.0",
+        "project1Description": "Website update for the Segycom company in Chihuahua, improved performance and SEO with the Next js framework, updated styles and implementation of new modules",
+        "project2Name": "Next Store Uniforms",
+        "project2Description": "Next Store Uniforms is a company that is dedicated to the sale of work uniforms, I developed this website so that it would function as an ecommerce, so that customers can see the catalog of the company's products",
+        "project3Name": "Portfolio",
+        "project3Description": "Web portfolio to show my skills, projects I have worked on and information about me.",
+        "project4Name": "Segycom web 3.0",
+        "project4Description": "Segycom Chihuahua is a company that sells security and communication equipment, focused on emergency vehicles. I developed its website to make it easier for customers to view and quote its products.",
+        "button": "MORE..."
+        
     }
 
 }

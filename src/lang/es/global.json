@@ -24,5 +24,18 @@
         "dateCertificate2": "Enero 2023",
         "titleCertificate3": "React: De cero a experto ( Hooks y MERN )",
         "dateCertificate3": "Mayo 2021"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "project1Name": "Segycom web 4.0",
+        "project1Description": "Actualización de sitio web para la empresa Segycom de Chihuahua, mejora del rendimiento y el SEO con el framework de Next js, actualizacion de estilos e implementación de nuevos modulos",
+        "project2Name": "Next Store Uniforms",
+        "project2Description": "Next Store Uniforms es una empresa que se dedica a la venta de uniformes de trabajo, desarrolle este sitio web para que funcionara como un ecommerce, para que los clientes puedan ver el catalogo de los productos de la empresa ",
+        "project3Name": "Portafolio",
+        "project3Description": "Portafolio web para mostrar mis habilidades, proyectos en los que he trabajado e informacion sobre mi.",
+        "project4Name": "Segycom web 3.0",
+        "project4Description": "Segycom de Chihuahua es una empresa de venta de equipos de seguridad y comunicación, enfocada en los vehiculos de emergencias, Yo desarrolle su sitio web para facilitar a los clientes la visualizacion y cotizaciones de sus productos.",
+        "button": "VER MÁS..."
+        
     }
 }

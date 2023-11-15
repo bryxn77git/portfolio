@@ -33,7 +33,7 @@ export const About = () => {
         
         <div className='max-w-4xl mx-auto flex items-center gap-5 flex-col px-5 lg:px-1'>
           <h2 className="text-2xl md:text-4xl font-extrabold mb-5"><span className="text-primary">{"<"}</span>{t('about.title')}<span className="text-primary">{" />"}</span></h2>
-          <p className="mb-10 text-center">{t('about.text')}</p>
+          <p className="mb-10">{t('about.text')}</p>
           
           <p className="text-lg md:text-2xl font-semibold mb-5">{t('about.subtitle1')}</p>
 

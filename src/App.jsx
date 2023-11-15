@@ -3,6 +3,7 @@ import { Home } from "./components/Home"
 import { Navbar } from "./components/Navbar"
 import { UiContext } from "./context/uiContext"
 import { About } from "./components/About"
+import { Projects } from "./components/Projects"
 
 export const App = () => {
 
@@ -22,8 +23,7 @@ export const App = () => {
         
         <About />
 
-        
-        <div id="projects">Projects</div>
+        <Projects />
         <div id="contact">Contact</div>
     </div>
   )
