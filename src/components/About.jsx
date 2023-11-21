@@ -29,9 +29,9 @@ export const About = () => {
    const { t } = useTranslation('global')
 
   return (
-    <section id="about" className='py-5 md:py-10 text-text font-poppins '>
+    <section id="about" className='py-5 md:py-10 text-text font-poppins px-5 lg:px-1'>
         
-        <div className='max-w-4xl mx-auto flex items-center gap-5 flex-col px-5 lg:px-1'>
+        <div className='max-w-4xl mx-auto flex items-center gap-5 flex-col '>
           <h2 className="text-2xl md:text-4xl font-extrabold mb-5"><span className="text-primary">{"<"}</span>{t('about.title')}<span className="text-primary">{" />"}</span></h2>
           <p className="mb-10">{t('about.text')}</p>
           

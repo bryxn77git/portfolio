@@ -11,7 +11,7 @@ export const Projects = () => {
     const { t } = useTranslation('global');
 
   return (
-    <section id="projects" className='py-5 md:py-10 text-text font-poppins flex flex-col items-center'>
+    <section id="projects" className='py-5 md:py-10 text-text font-poppins flex flex-col items-center px-5 lg:px-1'>
 
         <div className="flex justify-center">
             <h2 className="text-2xl md:text-4xl font-extrabold mb-10 md:mb-20"><span className="text-primary">{"<"}</span>{t('projects.title')}<span className="text-primary">{" />"}</span></h2>

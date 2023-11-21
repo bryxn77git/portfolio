@@ -36,6 +36,16 @@
         "project4Name": "Segycom web 3.0",
         "project4Description": "Segycom de Chihuahua es una empresa de venta de equipos de seguridad y comunicación, enfocada en los vehiculos de emergencias, Yo desarrolle su sitio web para facilitar a los clientes la visualizacion y cotizaciones de sus productos.",
         "button": "VER MÁS..."
-        
+    },
+    "contact": {
+        "title": "Contacto",
+        "text": "Si quieres contactarte conmigo, puedes hacerlo a través de las redes sociales o llenando el formulario de contacto. Te responderé lo antes posible.",
+        "placeHolderName": "Nombre",
+        "placeHolderEmail": "Correo",
+        "placeHolderComments": "Comentarios",
+        "buttonSend": "ENVIAR",
+        "buttonSending": "ENVIANDO...",
+        "buttonOk": "OK",
+        "buttonError": "ERROR"
     }
 }

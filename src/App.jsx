@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar"
 import { UiContext } from "./context/uiContext"
 import { About } from "./components/About"
 import { Projects } from "./components/Projects"
+import { Contact } from "./components/Contact"
 
 export const App = () => {
 
@@ -24,7 +25,9 @@ export const App = () => {
         <About />
 
         <Projects />
-        <div id="contact">Contact</div>
+        
+        <Contact />
+
     </div>
   )
 }
