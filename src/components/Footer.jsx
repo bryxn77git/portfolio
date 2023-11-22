@@ -1,10 +1,14 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid"
 import { SocialIcons } from "./SocialIcons"
+import { useTranslation } from "react-i18next"
 
 
 export const Footer = () => {
+
+   const { t } = useTranslation('global');
+
   return (
-    <footer className="bg-text w-full py-14 text-background flex flex-col items-center gap-8 "> 
+    <footer className="bg-text dark:bg-background dark:text-text w-full py-14 text-background flex flex-col items-center gap-8 "> 
         <div className="font-semibold flex flex-col md:flex-row items-center gap-1 md:gap-10">
             <div className="flex gap-3 items-center mb-1">
                 <EnvelopeIcon className="h-6 text-secondary" />
@@ -23,7 +27,7 @@ export const Footer = () => {
             <SocialIcons />
         </div>
 
-        <p className="font-light pt-5">Made by <span className="font-bold underline">Bryan Balderrama</span></p>
+        <p className="font-light pt-5">{t('footer.made')} <span className="font-bold underline">Bryan Balderrama</span></p>
         </div>
 
     </footer>
