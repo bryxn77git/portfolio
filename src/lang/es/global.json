@@ -47,5 +47,8 @@
         "buttonSending": "ENVIANDO...",
         "buttonOk": "OK",
         "buttonError": "ERROR"
+    },
+    "footer": {
+        "made": "Creado por"
     }
 }

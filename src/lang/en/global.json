@@ -30,6 +30,20 @@
         "project4Description": "Segycom Chihuahua is a company that sells security and communication equipment, focused on emergency vehicles. I developed its website to make it easier for customers to view and quote its products.",
         "button": "MORE..."
         
+    },
+    "contact": {
+        "title": "Contact",
+        "text": "If you want to contact me, you can do so through social networks or by filling out the contact form. I will answer you as soon as possible.",
+        "placeHolderName": "Name",
+        "placeHolderEmail": "Email",
+        "placeHolderComments": "Comments",
+        "buttonSend": "SEND",
+        "buttonSending": "SENDING...",
+        "buttonOk": "OK",
+        "buttonError": "ERROR"
+    },
+    "footer": {
+        "made": "Made by"
     }
 
 }

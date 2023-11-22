@@ -1,35 +1,55 @@
-import { useContext, useState  } from "react"
+import { useContext, useEffect, useState  } from "react"
 import { useTranslation } from "react-i18next";
 import { Bars3Icon, MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import { LangDropbox } from "./LangDropbox";
 import { SocialIcons } from "./SocialIcons";
 import { DrawerMenu } from "./DrawerMenu";
 import { UiContext } from "../context/uiContext";
+import { Link, useLocation } from "react-router-dom";
 
 
 export const Navbar = () => {
 
+    const location = useLocation();
+    const { hash } = location;
     const [showSidebar, setShowSidebar] = useState(false);
     const { theme, toggleChangeTheme } = useContext(UiContext);
     
     const [t, i18n] = useTranslation("global");
+
+    const scrollToElement = ( element ) => {
+      // Obtén la referencia al elemento de destino por su ID
+      const elementoDestino = document.getElementById(element);
+  
+      // Usa el método scrollIntoView con el comportamiento de desplazamiento suave
+      elementoDestino.scrollIntoView({ behavior: 'smooth' });
+    };
+   
 
   return (  
     <section className={`flex justify-between items-center px-5 py-3  bg-background shadow-md`}>
         
        <nav className="hidden md:block w-full">
             <ul className="flex gap-6 font-poppins font-semibold text-text">
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer underline decoration-secondary decoration-4">
-                <a href="#home">{t("navBar.home")}</a>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${hash === "" || hash === "#home" ? "underline decoration-secondary decoration-4" : ""}`}>
+                <Link to="#home" onClick={() => scrollToElement("home")}>
+                  {t("navBar.home")}
+                </Link>
               </li>
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">
-                <a href="#about">{t("navBar.about")}</a>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${ hash ===   "#about" && "underline decoration-secondary decoration-4"}`}>
+                <Link to="#about" onClick={() => scrollToElement("about")}>
+                  {t("navBar.about")}
+                </Link>          
               </li>
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">
-                <a href="#projects">{t("navBar.projects")}</a>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${ hash ===  "#projects" && "underline decoration-secondary decoration-4"}`}>
+                <Link to="#projects" onClick={() => scrollToElement("projects")}>
+                  {t("navBar.projects")}
+                </Link>         
               </li>
-              <li className="hover:text-secondary transition-all duration-150 cursor-pointer">
-                <a href="#contact">{t("navBar.contact")}</a>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${ hash ===  "#contact"  && "underline decoration-secondary decoration-4"}`}>
+                <Link to="#contact" onClick={() => scrollToElement("contact")}>
+                  {t("navBar.contact")}
+                </Link>
               </li>  
             </ul>
        </nav>
