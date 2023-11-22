@@ -6,6 +6,7 @@ import { About } from "./components/About"
 import { Projects } from "./components/Projects"
 import { Contact } from "./components/Contact"
 import { Footer } from "./components/Footer"
+import { ButtonToTop } from "./components/ButtonToTop"
 
 export const App = () => {
 
@@ -18,7 +19,7 @@ export const App = () => {
 
 
   return (
-    <div className={`${theme === 'dark' && 'dark'} bg-background`}>
+    <div className={`${theme === 'dark' && 'dark'} bg-background`} id="top">
         <Navbar />
 
         <Home />
@@ -30,6 +31,8 @@ export const App = () => {
         <Contact />
 
         <Footer />
+
+        <ButtonToTop />
 
     </div>
   )

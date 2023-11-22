@@ -18,10 +18,8 @@ export const Navbar = () => {
     const [t, i18n] = useTranslation("global");
 
     const scrollToElement = ( element ) => {
-      // Obtén la referencia al elemento de destino por su ID
       const elementoDestino = document.getElementById(element);
-  
-      // Usa el método scrollIntoView con el comportamiento de desplazamiento suave
+
       elementoDestino.scrollIntoView({ behavior: 'smooth' });
     };
    
