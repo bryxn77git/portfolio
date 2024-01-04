@@ -7,6 +7,8 @@ import { Projects } from "./components/Projects"
 import { Contact } from "./components/Contact"
 import { Footer } from "./components/Footer"
 import { ButtonToTop } from "./components/ButtonToTop"
+import { Route, Routes } from "react-router-dom"
+import { ProjectInfo } from "./components/ProjectInfo"
 
 export const App = () => {
 
@@ -22,13 +24,20 @@ export const App = () => {
     <div className={`${theme === 'dark' && 'dark'} bg-background`} id="top">
         <Navbar />
 
-        <Home />
+        <Routes>
+          <Route path="/" element={
+          <>
+             <Home />
         
-        <About />
-
-        <Projects />
-        
-        <Contact />
+             <About />
+     
+             <Projects />
+             
+             <Contact />
+          </>
+          } />
+          <Route path="project/:projectSlug" element={<ProjectInfo />} />
+        </Routes>
 
         <Footer />
 

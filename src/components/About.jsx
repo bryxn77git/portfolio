@@ -70,9 +70,9 @@ export const About = () => {
           <p className="text-lg md:text-2xl font-semibold mb-10">{t('about.subtitle3')}</p>
 
           <div className='flex flex-wrap justify-center gap-10 sm:gap-3 w-full max-w-4xl'>
-            <Certificate img={itjCertificate} title={t("about.titleCertificate1")} date={t("about.dateCertificate1")}/>
-            <Certificate img={udemyCertificate} title={t("about.titleCertificate2")} date={t("about.dateCertificate2")}/>
-            <Certificate img={udemyCertificate} title={t("about.titleCertificate3")} date={t("about.dateCertificate3")}/>
+            <Certificate img={itjCertificate} title={t("about.titleCertificate1")} date={t("about.dateCertificate1")} link={'https://micoach.itj.com/candidate/644959112dd19c595dea1e5d/achievements/642f0779e1b7b7cf9a9e6855'}/>
+            <Certificate img={udemyCertificate} title={t("about.titleCertificate2")} date={t("about.dateCertificate2")} link={'https://www.udemy.com/certificate/UC-08dcc447-f3b1-4db5-9a7d-23e3639c5a95/'}/>
+            <Certificate img={udemyCertificate} title={t("about.titleCertificate3")} date={t("about.dateCertificate3")} link={'https://www.udemy.com/certificate/UC-291e6077-e025-4ec8-8dee-0c6b7a5f9dac/'}/>
           </div>
 
 
