@@ -25,7 +25,7 @@ export const App = () => {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={
+          <Route path="/portfolio" element={
           <>
              <Home />
         
@@ -36,7 +36,7 @@ export const App = () => {
              <Contact />
           </>
           } />
-          <Route path="project/:projectSlug" element={<ProjectInfo />} />
+          <Route path="portfolio/project/:projectSlug" element={<ProjectInfo />} />
         </Routes>
 
         <Footer />
