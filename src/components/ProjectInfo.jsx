@@ -21,7 +21,7 @@ export const ProjectInfo = () => {
     <>
     {
             currentProject && (
-                <div className='flex flex-col items-center mt-10 font-poppins'>
+                <div className='flex flex-col items-center mt-10 font-poppins text-text'>
 
                     <div className="flex flex-col gap-5 items-center max-w-4xl">
                         <h2 className="text-2xl md:text-4xl font-extrabold mb-5"><span className="text-primary">{"<"}</span>{currentProject[0].title}<span className="text-primary">{" />"}</span></h2>
