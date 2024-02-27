@@ -25,7 +25,7 @@ export const App = () => {
         <Navbar />
 
         <Routes>
-          <Route path="/portfolio" element={
+          <Route path="portfolio" element={
           <>
              <Home />
         

@@ -6,6 +6,7 @@ import { SocialIcons } from "./SocialIcons";
 import { DrawerMenu } from "./DrawerMenu";
 import { UiContext } from "../context/uiContext";
 import { Link, useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 
 export const Navbar = () => {
@@ -29,26 +30,26 @@ export const Navbar = () => {
         
        <nav className="hidden md:block w-full">
             <ul className="flex gap-6 font-poppins font-semibold text-text">
-              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${hash === "" || hash === "#home" ? "underline decoration-secondary decoration-4" : ""}`}>
-                <Link to="#home" onClick={() => scrollToElement("home")}>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer`}>
+                <HashLink smooth to="/portfolio">
                   {t("navBar.home")}
-                </Link>
+                </HashLink>   
               </li>
-              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${ hash ===   "#about" && "underline decoration-secondary decoration-4"}`}>
-                <Link to="#about" onClick={() => scrollToElement("about")}>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer`}> 
+                <HashLink smooth to="/portfolio#about">
                   {t("navBar.about")}
-                </Link>          
+                </HashLink>        
               </li>
-              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${ hash ===  "#projects" && "underline decoration-secondary decoration-4"}`}>
-                <Link to="#projects" onClick={() => scrollToElement("projects")}>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer`}> 
+                <HashLink smooth to="/portfolio#projects">
                   {t("navBar.projects")}
-                </Link>         
+                </HashLink>      
               </li>
-              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer ${ hash ===  "#contact"  && "underline decoration-secondary decoration-4"}`}>
-                <Link to="#contact" onClick={() => scrollToElement("contact")}>
+              <li className={`hover:text-secondary transition-all duration-150 cursor-pointer`}>
+                <HashLink smooth to="/portfolio#contact">
                   {t("navBar.contact")}
-                </Link>
-              </li>  
+                </HashLink>
+              </li>
             </ul>
        </nav>
 

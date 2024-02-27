@@ -31,8 +31,10 @@ export const Home = () => {
                 <Link to="#projects" onClick={() => scrollToElement("projects")}>
                     <button className="bg-primary hover:opacity-90 w-[162px] py-2 rounded-md transition-all duration-150">{t("home.projectsButton")}</button>
                 </Link>
-                <button className="bg-secondary hover:opacity-90 w-[162px] py-2 rounded-md transition-all duration-150">{t("home.cvButton")}</button>
-
+                <Link to="https://drive.google.com/file/d/1y8U7VPwop5kh1TkhQ4wAiVpVxmiJgFMp/view?usp=sharing" target="_blank">
+                  <button className="bg-secondary hover:opacity-90 w-[162px] py-2 rounded-md transition-all duration-150">{t("home.cvButton")}</button>
+                </Link>
+                
             </div>
 
             <div className="flex relative -top-32 gap-2">
